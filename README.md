@@ -14,7 +14,7 @@
 #### Si vous préférez télécharger, cliquez [ici](https://github.com/Nyrok/Discord.js_V11-Nemo/archive/master.zip), ensuite ouvrez le zip et enfin le fichier qui sera censé vous redirigé vers une page web.
 #### Si vous voulez copier coller le code, allez [ici](https://raw.githubusercontent.com/Nyrok/Javascript-JustePrix/master/index.html?token=ALNEQDTSIW2MCO3N4NVBSNK7HXPAE) puis faîtes CTRL+A et CTRL+C, allez sur votre IDE créez un fichier index.html et enfin collez le code et ouvrez le fichier sur votre navigateur.
 
-# Réseaux
+# Réseaux et Remerciements
 #### Twitter : [@Nyrok10](https://twitter.com/Nyrok10)
 #### Seryû-Ub : https://github.com/Seryu-Ub
 #### Plattyz : https://github.com/Plattyz

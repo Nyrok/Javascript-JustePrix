@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<!--FORME-->
+<head>
+    <meta charset="utf-8">
+
+    <title>Juste Prix - By Nyrok</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<!--PAGE-->
+<body>
+    <h2>
+        Voici un projet rapide codé rapidement : Le Juste Prix
+    </h2>
+    <h2>
+        By Nyrok
+    </h2>
+    <button onclick="JustePrix()">Commencer le jeu</button>
+</body>
+</html>
+<!--CODE-->
+<script>
+    function JustePrix() {
+        if (confirm(
+                "Bienvenue sur le juste prix !\nLe but du jeu est simple, j'imagine un nombre et vous devez le trouver,\nJe vous indiquerais si le chiffre proposé est plus grand ou plus petit.\nPrêt à commencer ?"
+            )) {
+            var random = Math.floor(Math.random() * 100);
+            var tried = 0;
+            while (true) {
+                var question = prompt("Dit moi un nombre entre 1 et 100.\nTentatives : " + tried);
+                if (question == random) {
+                    alert(
+                        "GG !\nTu as gagné le juste prix en " + tried +
+                        " tentatives, n'oublie pas de mettre une étoile sur le projet Github.\nhttps://github.com/Nyrok/Javascript-JustePrix\nBy Nyrok"
+                    );
+                    break;
+                } else if (!question) {
+                    alert("La bonne réponse était " + random + ", tu peux toujours retenter ta chance !\nBy Nyrok");
+                    break;
+                } else {
+                    if (isNaN(question)) alert("Veuillez entrer un nombre !");
+                    if (question > random) {
+                        tried++;
+                        alert("Plus petit !");
+                    } else if (question < random) {
+                        tried++;
+                        alert("Plus grand !");
+                    }
+                }
+            }
+        } else {
+            alert("Dommage, vous auriez aimé jouer !\nBy Nyrok");
+        }
+    }
+</script>
